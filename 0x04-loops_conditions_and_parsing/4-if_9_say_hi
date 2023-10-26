@@ -7,9 +7,9 @@ while [ $i -le 10 ]
 do
 	if [ $i -eq 9 ]
 	then
-		echo "$i Hi"
+		echo "Hi"
 	else
-		echo "$i Best School"
+		echo "Best School"
 	fi
 	((i++))
 done
