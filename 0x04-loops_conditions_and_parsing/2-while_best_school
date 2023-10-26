@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bash script that dispalys 'Best School' 10 times
+# Displays 'Best School' in stdout 10 times using While Loop
 
 i=0
 while [ $i -lt 10 ]
