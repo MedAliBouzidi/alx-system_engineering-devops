@@ -1,5 +1,11 @@
 # Set up client SSH configuration file to connect to a server
 # without typing a password.
+
+exec { 'puppet':
+  command  => 'sudo puppet module install puppetlabs/stdlib',
+  provider => 'shell',
+}
+
 include stdlib
 
 file_line{'Turn off passwd auth':
