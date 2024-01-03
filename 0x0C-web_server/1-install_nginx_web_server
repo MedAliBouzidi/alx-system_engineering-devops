@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Configures a new Ubuntu machine to respect requirements
+
+# Switch to root user
+sudo su
+
+# Update Ubuntu repository
+apt update -y
+
+# install Nginx
+apt install nginx -y
+
+# Allow Nginx HTTP
+# ufw allow 'Nginx HTTP'
+
+# Write the message to index file
+echo 'Hello World!' > /var/www/html/index.html
+
+# Start Nginx Server
+service nginx start
