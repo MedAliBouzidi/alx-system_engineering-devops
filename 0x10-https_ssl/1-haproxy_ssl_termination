@@ -40,7 +40,7 @@ frontend bouzidi-med-ali.tech-http-frontend
         default_backend bouzidi-med-ali.tech-backend
 
 frontend bouzidi-med-ali.tech-https-frontend
-        bind *:443 ssl crt /etc/letsencrypt/live/www.bouzidi-med-ali.tech/fullchain.pem
+        bind *:443 ssl crt /etc/ssl/bouzidi-med-ali.tech.pom
         http-request set-header X-Forwarded-Proto https
         default_backend bouzidi-med-ali.tech-backend
 
